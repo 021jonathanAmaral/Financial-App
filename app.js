@@ -2,6 +2,34 @@ var revenues = 0
 var expenses = 0
 var balance = 0
 
+var savedExpeses = [
+    {
+        name:"Americanas",
+        value:-123
+    },
+    {
+        name:"Transferencia do Tio Marcos",
+        value:5800
+    },
+    {
+        name:"Transferencia do Julio (aniversário)",
+        value:800
+    },
+    {
+        name:"Transferencia do Primo Rico",
+        value:5500
+    },
+    {
+        name:"Uber",
+        value:-67,37
+    },
+    {
+        name:"Faculdade",
+        value:-550
+    }
+]
+
+
 const trans_ul = document.getElementById('add_trans')
 
 const todoButton = document.getElementById('button')
