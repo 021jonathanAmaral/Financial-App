@@ -1,0 +1,175 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(0, 255, 149), rgb(187, 253, 174));
+}
+
+header{
+   height: 200px;
+}
+
+
+section{
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    border-top-left-radius:25px ;
+    border-top-right-radius:25px ;
+}
+
+
+.infos_client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}.return{
+    width: 60%;
+}
+
+
+.Your_balance{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    color: white;
+
+}.value{
+font-size: 40px;
+}.value_text p{
+    margin: 0;
+}
+
+
+
+.resumo_individual{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+height: 100%;
+}.entradas{
+    margin-top: 10px;
+    border-radius: 10px;
+    background:rgb(216, 253, 216);
+    
+    
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}.entradas_text{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 129, 31);
+}.entradas_value{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 129, 31);
+}
+
+.saidas{
+    margin-top: 10px;
+    border-radius: 10px;
+    background:rgb(248, 174, 165);
+    
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}.saidas_text{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 0, 0);
+}.saidas_value{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 0, 0);
+}
+
+
+.transactions_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transactions{
+    margin-top: 10px;
+  
+    width: 95%;
+    height: 200px;
+
+}
+
+
+
+
+.input_container{
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}.input_container p{
+    margin: 0;
+}input{
+    width: 95%;
+    height: 35px;
+    border: none;
+    background:none;
+
+    background:rgb(224, 224, 224);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+button{
+    width: 98%;
+    height: 35px;
+    border: none;
+    background:none;
+    color: white;
+
+    background:rgb(0, 255, 149);
+    border-radius: 10px;
+    margin-top: 10px; 
+}
+
+ul{
+    padding-left: 0;
+    height: 20px;
+   
+}
+.div_trans_css{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style:none;
+    
+   
+    background-color: rgb(221, 221, 221);
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    
+}.li_trans_css{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 90);
+}.li_trans_css_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
