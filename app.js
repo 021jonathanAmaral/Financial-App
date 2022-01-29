@@ -1,35 +1,23 @@
+var revenues = 0
+var expenses = 0
+var balance = 0
+
 const trans_ul = document.getElementById('add_trans')
 
 const todoButton = document.getElementById('button')
 
 var Balance_txt = document.getElementById('value_number')
-todoButton.addEventListener('click', addTodo) 
-
-function addTodo(event){
-    event.preventDefault()
-    console.log('funciona')
-}
-
-
-
-
 
 function add_value(event){
+    let name = document.getElementById('name_value').value
 
-    
+    let number = document.getElementById('number_value').value
 
-    const name = document.getElementById('name_value').value
+    let value = Number(number)
 
-    const number = document.getElementById('number_value').value
-
-    
- 
-    if( name === ''){
-        alert('erro')
-    }else if(number === ''){
-        alert('erro')
+    if( name === '' || number === '' || typeof value !== 'number'){
+        alert('erro. name: ' + name  + "number: " + typeof number)
     }else{
-        alert('deucerto01')
        
        const trans_div = document.createElement('div')
        trans_div.classList.add('div_trans_css')
@@ -42,21 +30,19 @@ function add_value(event){
 
        trans_li.innerText =  name
       
-      
-      var value = Number(number)
-      
-      
         if(value < 0){
-        trans_li_2.innerText = `R$ ${value}`
-        trans_li_2.style.color = "red"
-        const saídas = document.querySelector('.saidas_value')
-        saídas.innerText= value
+            trans_li_2.innerText = `R$ ${value}`
+            trans_li_2.style.color = "red"
+            const saídas = document.querySelector('.saidas_value')
+            expenses -= value
+            saídas.innerText = `(R$ ${expenses})`
         
         }else{
-            trans_li_2.innerText = `R$${value}`
+            trans_li_2.innerText = `R$ ${value}`
             trans_li_2.style.color = "blue"
             const entradas = document.querySelector('.entradas_value')
-            entradas.innerText= value
+            revenues += value
+            entradas.innerText = `R$${revenues}`
         }
 
        trans_div.appendChild(trans_li)
@@ -65,16 +51,13 @@ function add_value(event){
 
        trans_ul.appendChild(trans_div)
 
-       
-       alert('deucerto')
-      
+       name_value.value = ""
+       number_value = ""
 
-       name_value.value=" "
-       number_value = " "
+       balance = revenues - expenses
+
+       Balance_txt.innerText = balance > 0 ? `R$ ${balance}` : `(R$ ${-1*balance})` 
     }
-    
-    
-
 }
 
     
