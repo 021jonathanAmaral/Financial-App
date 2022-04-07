@@ -1,33 +1,8 @@
 var revenues = 0
 var expenses = 0
 var balance = 0
+var balance_real = 0
 
-var savedExpeses = [
-    {
-        name:"Americanas",
-        value:-123
-    },
-    {
-        name:"Transferencia do Tio Marcos",
-        value:5800
-    },
-    {
-        name:"Transferencia do Julio (aniversário)",
-        value:800
-    },
-    {
-        name:"Transferencia do Primo Rico",
-        value:5500
-    },
-    {
-        name:"Uber",
-        value:-67,37
-    },
-    {
-        name:"Faculdade",
-        value:-550
-    }
-]
 
 
 const trans_ul = document.getElementById('add_trans')
@@ -36,7 +11,7 @@ const todoButton = document.getElementById('button')
 
 var Balance_txt = document.getElementById('value_number')
 
-function add_value(event){
+function add_value(){
     let name = document.getElementById('name_value').value
 
     let number = document.getElementById('number_value').value
@@ -63,7 +38,7 @@ function add_value(event){
             trans_li_2.style.color = "red"
             const saídas = document.querySelector('.saidas_value')
             expenses -= value
-            saídas.innerText = `(R$ ${expenses})`
+            saídas.innerText = `R$ ${expenses}`
         
         }else{
             trans_li_2.innerText = `R$ ${value}`
@@ -84,11 +59,20 @@ function add_value(event){
 
        balance = revenues - expenses
 
-       Balance_txt.innerText = balance > 0 ? `R$ ${balance}` : `(R$ ${-1*balance})` 
+       
+
+       
+       if(balance > 0){
+           Balance_txt.innerText = `R$ ${balance + TotalInvest}`
+           Balance_txt.style.color = "blue"
+       }else{
+            Balance_txt.innerText = `R$ ${balance + TotalInvest}`
+            Balance_txt.style.color = "red" 
+       }
     }
 }
 
-    
+
 
 
 

@@ -5,25 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="invest.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="infos_client">
-            <div class="return">
-                <p> < </p>
+            <div class="infos">
+                <h1>Welcome</h1>
+                <h5>Jonathan Cristovão</h5>
+                
             </div>
            
-            <div class="infos">
-                <h5>Jonathan Cristovão</h5>
-                <img src="" alt="">
+            <div class="return">
+                <img src="img/271435062_636016407437145_8513309957001662789_n.jpg" width="60px" style="border-radius: 50%;" alt="">
             </div>
+           
+            
         </div>
 
         <div class="Your_balance">
             <div class="value" id="value_number" ></div>
             <div class="value_text"><p><strong>Your balance</strong></p></div>
         </div>
+
+        <div class="menu_bar">
+            <div class="item_one"> <img src="./img/dinheiro.png" width="30px" alt=""></div>
+            <div class="item_one" onclick="openModalCandle()"> <img src="./img/candlestick.png" width="40px" alt=""></div>
+            <div class="item_one"> <img src="./img/candlestick.png" width="40px" alt=""></div>
+           
+        </div>
+
     </header>
 
     <section>
@@ -90,9 +102,10 @@
             <div class="inputs">
                
                 <div class="inputs_texts">
-                    
+                    <p><strong>DESCRIPTION</strong></p>
                     <input type="text" name="" id="name_value" placeholder="Name..." >
                     
+                    <p><strong>VALUE</strong></p>
                     <input type="number" name="" id="number_value" placeholder="Value...">
                 </div>
                 <div class="input_button">
@@ -102,6 +115,59 @@
             </div>
         </div>
     </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="invest">
+        <div class="invest_container">
+            <div class="header_invest" onclick="closeModalCandle()">
+                <div class="profile">
+                    <img src="./img/271435062_636016407437145_8513309957001662789_n.jpg" alt="">
+                    <div><h4 style="margin-bottom: 0px;">Hello</h4><p style="margin-top: 0px;">Jonathan C.</p></div>
+                </div>
+               
+                <div class="header_h1"><h1>INVESTMENTS</h1></div>
+
+                <div class="header_total_value" id="total_txt"><h3></h3></div>
+            </div>
+
+            <div class="section_invest">
+               <div class="investing">
+                  
+                <ul class="invest_ul" style="overflow-y: scroll;">
+                       
+                           
+
+                 </ul>
+               </div>
+               
+               <div class="inputs_investing">
+                    <input type="text" placeholder="Name" id="nameAtiv">
+
+                    <input type="number" name="" placeholder="InitialValue" id="Initial">
+
+                    <input type="number" placeholder="AtualValue" id="NowValue" >
+
+                    <input type="number" placeholder="Quantidade" id="Quant">
+
+                    <button onclick="CreateInvest()" >Add invest</button>
+               </div>
+            </div>
+         </div>
+    </section>
     <script src="app.js"></script>
+    <script src="investApp.js"></script>
+    <script src="modais.js"></script>
 </body>
 </html>

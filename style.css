@@ -3,7 +3,7 @@ body{
     padding: 0%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right,rgb(0, 255, 149), rgb(187, 253, 174));
+    background-image: linear-gradient(to right,rgb(0, 193, 241), rgb(20, 118, 143));
 }
 
 header{
@@ -21,13 +21,24 @@ section{
 
 .infos_client{
     display: flex;
+    justify-content: space-between;
+    
     align-items: center;
-    justify-content: center;
     margin: 10px;
     
-}.return{
-    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    font-weight: bold;
+}.return img{
+    box-shadow: 1px 1px 0px 2px rgba(158, 158, 158, 0.541);
+}.infos h1{
+    margin-bottom: 0;
+    font-size: 25px;
+}.infos h5{
+    margin-top: 0;
 }
+
 
 
 .Your_balance{
@@ -52,7 +63,7 @@ height: 100%;
 }.entradas{
     margin-top: 10px;
     border-radius: 10px;
-    background:rgb(216, 253, 216);
+    background:rgb(116, 185, 241);
     
     
     width: 150px;
@@ -63,11 +74,13 @@ height: 100%;
 }.entradas_text{
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(31, 129, 31);
+    color: rgb(255, 255, 255);
 }.entradas_value{
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(31, 129, 31);
+    font-weight: bold;
+    font-size: 30px;
+    color: blue;
 }
 
 .saidas{
@@ -80,14 +93,19 @@ height: 100%;
     padding: 5px;
 
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(20, 118, 143);
 }.saidas_text{
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(255, 0, 0);
+    color: white;
+    
 }.saidas_value{
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+    
 }
 
 
@@ -122,7 +140,7 @@ height: 100%;
 
     background:rgb(224, 224, 224);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     padding-left: 10px;
 }
 button{
@@ -132,7 +150,7 @@ button{
     background:none;
     color: white;
 
-    background:rgb(0, 255, 149);
+    background:rgb(20, 118, 143);
     border-radius: 10px;
     margin-top: 10px; 
 }
@@ -164,6 +182,34 @@ ul{
 }.li_trans_css_2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+.inputs_texts p{
+ margin-left: 5px;
+ margin-top: 5px;
+ margin-bottom: 0;
+ margin-top: 10px;
+ 
+ color: rgb(0, 193, 241);
+}
+
+
+.menu_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px ;
+    
+}
+.item_one{
+    background-color: rgba(78, 123, 160, 0.555);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    
 }
 
 
